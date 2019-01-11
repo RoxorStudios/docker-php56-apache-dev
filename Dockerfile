@@ -16,4 +16,6 @@ ENV APACHE_RUN_GROUP www-data
 
 EXPOSE 80
 
+ADD systemfiles/php.ini /etc/php5/apache2/php.ini
+
 CMD /usr/sbin/apache2ctl -D FOREGROUND
